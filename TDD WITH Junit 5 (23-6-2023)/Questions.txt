@@ -1,0 +1,16 @@
+1. Do i need to add separate dependency for Junit 5 in spring boot?
+
+Using Spring Boot > 2.4.0
+	If you are using Spring Boot > 2.4.0, then there is nothing you have to do to use JUnit 5 Jupiter,
+ because the spring-boot-starter-test library no longer includes the vintage-engine dependency (
+ which transitively included JUnit 4), just include the starter dependency to the project and you're 
+ good to go.
+
+Using 2.4.0 > Spring Boot > 2.2.0
+If you use earlier versions, I'd suggest using a version higher than 2.2.0.RELEASE, which is where the Spring team added 
+support for JUnit 5 Jupiter into the spring-boot-starter-test by default.
+
+In these versions, the library included the Vintage Engine dependency too, which could be used to run JUnit 4 tests using the JUnit 5 Jupiter platform.
+ If you don't need to execute JUnit 4 tests, then the spring team suggests excluding org.junit.vintage:junit-vintage-engine (not just junit as indicated in the description)
+ 
+ 
