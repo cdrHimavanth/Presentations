@@ -1,0 +1,10 @@
+
+b
+java:S2134
+"@Don't extend "Thread", since the "run" method is not overridden.(—ğ¼£úÿÿÿÿ8¿Íˆ»™1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8ËÍˆ»™1
+W	java:S125"<This block of commented-out lines of code should be removed.(¯ığ*8È¶­»™1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¿ˆğÚşÿÿÿÿ8ÌÍˆ»™1
+R
+java:S1128"5Remove this unused import 'org.openqa.selenium.Keys'.(§Õ8È¶­»™1
